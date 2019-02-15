@@ -42,7 +42,8 @@ public class PoolRest {
     
     @GetMapping("${path.getAccounts}")
     public List<Account> getAccounts() {
-        return service.getAccounts();
+        System.out.println("In method getAccounts");
+    	return service.getAccounts();
     }
 
     @GetMapping("${path.getAccountById}")
